@@ -4,7 +4,7 @@ import mangaList from './data/Article'
 function App() {
   
   const [mangaArray, setMangaArray] = useState(mangaList);
-  const [newManga, setNewMange] = useState("");
+  const [newManga, setNewManga] = useState("");
 
   const addManga = event => {
     event.preventDefault();
