@@ -4,6 +4,11 @@ import mangaList from './data/Article'
 function App() {
   console.log(mangaList);
 
+  const [mangaArray, setMangaArray] = useState(mangaList);
+  const [newManga, setNewMange] = useState("");
+  console.log(mangaArray);
+  console.log(newManga);
+
   return (
     <>
       <ul>
