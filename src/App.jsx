@@ -14,7 +14,7 @@ function App() {
   }
 
   const deleteManga = (indexToDelete) => {
-    const newMangaArray = mangaArray.filter((manga, index) => indexToDelete !== index)
+    const newMangaArray = mangaArray.filter((manga, index) => indexToDelete !== index);
     setMangaArray(newMangaArray);
   }
 
@@ -28,7 +28,7 @@ function App() {
           {mangaArray.map((manga, index)=>
           <li key={index}>
             <h3>{manga}</h3>
-            <i className='fa-solid fa-trash' type='button' onClick={deleteManga}>Delete Manga</i>
+            <i className='fa-solid fa-trash' type='button' onClick={() => deleteManga(index)}>Delete Manga</i>
           </li>
           )}
         </ul>
